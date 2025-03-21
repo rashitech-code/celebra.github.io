@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Event Planning</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f3f4f6;
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2b6cb0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 5px solid #2c5282;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+        form {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #2b6cb0;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .customization {
+            margin-bottom: 40px;
+        }
+        .customization h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #2b6cb0;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group label {
+            margin-right: 20px;
+            font-weight: normal;
+        }
+        .submit-btn {
+            background-color: #2b6cb0;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #2c5282;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2b6cb0;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Professional Event Planning</h1>
+    <p>From conferences and seminars to networking events, we ensure your event leaves a positive impact.</p>
+</header>
+
+<form id="professionalEventForm">
+    <h2>Event Details</h2>
+    <label for="host-name">Host Name:</label>
+    <input type="text" id="host-name" name="host-name" required>
+
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" required>
+
+    <label for="event-type">Type of Event:</label>
+    <select id="event-type" name="event-type" required>
+        <option value="Conference">Conference</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Networking Event">Networking Event</option>
+        <option value="Corporate Function">Corporate Function</option>
+    </select>
+
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" id="contact-number" name="contact-number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <label for="guest-number">Number of Attendees:</label>
+    <input type="number" id="guest-number" name="guest-number" min="1" required>
+
+    <label for="venue">Venue:</label>
+    <input type="text" id="venue" name="venue" required>
+
+    <h2>Customization Options</h2>
+
+    <div class="customization">
+        <h3>Event Setup:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="setup" value="Stage"> Stage</label>
+            <label><input type="checkbox" name="setup" value="Audio-Visual Equipment"> Audio-Visual Equipment</label>
+            <label><input type="checkbox" name="setup" value="Podium"> Podium</label>
+            <label><input type="checkbox" name="setup" value="Lighting"> Lighting</label>
+            <label><input type="checkbox" name="setup" value="Seating Arrangements"> Seating Arrangements</label>
+            <label><input type="checkbox" name="setup" value="Signage"> Signage</label>
+            <label><input type="checkbox" name="setup" value="Registration Desk"> Registration Desk</label>
+            <label><input type="checkbox" name="setup" value="Exhibit Booths"> Exhibit Booths</label>
+        </div>
+        <label for="custom-setup">Other Setup Requirements:</label>
+        <input type="text" id="custom-setup" name="custom-setup" placeholder="Describe any additional setup requests">
+    </div>
+
+    <div class="customization">
+        <h3>Catering:</h3>
+        <label for="catering-type">Catering Type:</label>
+        <select id="catering-type" name="catering-type">
+            <option value="Buffet">Buffet</option>
+            <option value="Plated Meal">Plated Meal</option>
+            <option value="Coffee Breaks">Coffee Breaks</option>
+            <option value="Cocktail Reception">Cocktail Reception</option>
+        </select>
+
+        <label for="cuisine">Cuisine Preferences:</label>
+        <input type="text" id="cuisine" name="cuisine" placeholder="Specify cuisine preferences">
+
+        <label for="dietary-restrictions">Dietary Restrictions:</label>
+        <textarea id="dietary-restrictions" name="dietary-restrictions" rows="3" placeholder="List any dietary restrictions"></textarea>
+    </div>
+
+    <div class="customization">
+        <h3>Event Management Services:</h3>
+        <label><input type="checkbox" name="management" value="Event Coordinator"> Event Coordinator</label>
+        <label><input type="checkbox" name="management" value="Technical Support"> Technical Support</label>
+        <label><input type="checkbox" name="management" value="Security Personnel"> Security Personnel</label>
+        <label><input type="checkbox" name="management" value="Guest Registration Desk"> Guest Registration Desk</label>
+        <label><input type="checkbox" name="management" value="Ushers"> Ushers</label>
+        <label><input type="checkbox" name="management" value="Photographer/Videographer"> Photographer/Videographer</label>
+    </div>
+
+    <h2>Additional Services</h2>
+    <label for="additional-services">Additional Services:</label>
+    <textarea id="additional-services" name="additional-services" rows="5" placeholder="Provide any additional service requests..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Event Plan</button>
+</form>
+
+<footer>
+    <p>Professional Event Planning &copy; 2024</p>
+</footer>
+
+</body>
+</html>

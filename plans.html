@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans - Celebra Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EDE8F5;
+            color: #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        header {
+            background-color: #D1E9F6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-family: 'Lucida Handwriting', cursive;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            color: #1F2544;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+            color: #1F2544;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(45deg, #E2DAD6, #0077b6);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            position: relative;
+            transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #1F2544;
+            left: 50%;
+            bottom: -5px;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        nav a:hover {
+            background-color: #76bbe5;
+            color: #1F2544;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero {
+            background-image: url("plans.jpg");
+            /* Use a real URL or link to your image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 2;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .plans {
+            padding: 40px 20px;
+            background-color: #EDE8F5;
+        }
+
+        .plans h2 {
+            text-align: center;
+            color: #1F2544;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .plan-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 500px;
+            text-align: center;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .plan-item h3 {
+            color: #1d3557;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .plan-item p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .plan-item .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #023e8a;
+            margin-top: 10px;
+        }
+
+        .plan-item:hover {
+            box-shadow: 0 8px 16px rgba(54, 53, 53, 0.893);
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: linear-gradient(45deg, #ADBBDA, #023e8a);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer .social-icons {
+            margin-top: 10px;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #020533;
+            transform: scale(1.2);
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f7f7f9;
+            color: #023e8a;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            display: none;
+            transition: transform 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="Website Logo" class="logo">
+        <h1>Celebra Events</h1>
+        <p>Your Dream Event, Our Passion</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Our Event Plans</h1>
+    </div>
+
+    <div class="plans">
+        <h2>Choose Your Perfect Plan</h2>
+    
+        <!-- Basic Plans -->
+        <h2 style="color: #1F2544; text-align: center; text-decoration: underline;">Basic Plans</h2>
+        <div class="plan-item">
+            <h3>Starter Gathering</h3>
+            <p>Includes 10 guests, basic decor, music system, and snacks with beverages for 10 people.</p>
+            <p class="price">₹8,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Small Family Event</h3>
+            <p>Includes 15 guests, basic decor, 1 cake, light snacks, and drinks for 15 people.</p>
+            <p class="price">₹12,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Budget Celebration</h3>
+            <p>Includes 20 guests, basic decor, music system, snacks, and a single main course with dessert.</p>
+            <p class="price">₹15,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Simple Birthday Party</h3>
+            <p>Includes 25 guests, 1 small cake, colorful balloons, and snacks with beverages for 25 people.</p>
+            <p class="price">₹18,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Mini Party Plan</h3>
+            <p>Includes 30 guests, simple decor, music, and a buffet-style setup with snacks and drinks.</p>
+            <p class="price">₹20,000</p>
+        </div>
+    
+        <!-- Advanced Plans -->
+        <h2 style="color: #1F2544 text-align: center; text-decoration: underline;">Advanced Plans</h2>
+        <div class="plan-item">
+            <h3>Advanced Kitty Party</h3>
+            <p>Includes 30 guests, upgraded decor, games, music system, snacks, and beverages.</p>
+            <p class="price">₹25,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Family Gathering Plan</h3>
+            <p>Includes 40 guests, thematic decor, music system, and food with a main course and dessert.</p>
+            <p class="price">₹35,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Birthday Bash</h3>
+            <p>Includes 50 guests, vibrant decor, music, games, and catering with snacks, drinks, and desserts.</p>
+            <p class="price">₹40,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Advanced Wedding Celebration</h3>
+            <p>Includes 60 guests, elegant decor, 2 cakes, music system, and a two-course buffet with drinks.</p>
+            <p class="price">₹50,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Thematic Small Party</h3>
+            <p>Includes 70 guests, customized themed decor, light music, and a buffet with snacks, drinks, and desserts.</p>
+            <p class="price">₹60,000</p>
+        </div>
+    
+        <!-- Premium Plans -->
+        <h2 style="color: #1F2544 text-align: center; text-decoration: underline;">Premium Plans</h2>
+        <div class="plan-item">
+            <h3>Luxury Family Plan</h3>
+            <p>Includes 80 guests, premium decor, live DJ, and a buffet with multi-course dining and beverages.</p>
+            <p class="price">₹75,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Premium Wedding Package</h3>
+            <p>Includes 100 guests, grand decor, live music, photography, and catering with a gourmet buffet.</p>
+            <p class="price">₹1,00,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Plush Birthday Party</h3>
+            <p>Includes 120 guests, luxury decor, custom cake, entertainment, and premium dining options.</p>
+            <p class="price">₹1,20,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Corporate Premium Plan</h3>
+            <p>Includes 150 guests, professional decor, live entertainment, and a premium multi-course meal.</p>
+            <p class="price">₹1,50,000</p>
+        </div>
+        <div class="plan-item">
+            <h3>Elite Party Plan</h3>
+            <p>Includes 200 guests, high-end decor, celebrity performances, and a luxury buffet with beverages.</p>
+            <p class="price">₹2,00,000</p>
+        </div>
+    </div>
+    
+    
+        <!-- Additional plans as needed -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Celebra Events. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+            <a href="https://x.com/i/flow/login" title="Twitter"><img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+            <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+            <a href="https://www.linkedin.com/login" title="LinkedIn"><img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" id="scrollToTop" title="Back to Top"> &uarr;</div>
+    
+    <script>
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+                scrollToTopBtn.style.animation = "fadeInUp 0.5s ease";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
