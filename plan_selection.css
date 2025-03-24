@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #1F2544;
+    color: white;
+    padding: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.plan-selection {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#planDetails {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+dialog {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.dialog-content {
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+    background: #1F2544;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    select, button {
+        font-size: 14px;
+    }
+}

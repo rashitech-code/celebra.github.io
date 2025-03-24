@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
     <div class="background-bubbles">
@@ -15,9 +15,9 @@
     </div>
 
     <div class="login-container">
-        <h2>Login</h2>
         <p id="error-message" class="error-text"></p>
 
+        <h2>Administer Login</h2>
         <!-- Added ID to form for targeting in JavaScript -->
         <form id="login-form">
             <div class="input-group">
@@ -30,11 +30,10 @@
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="login-btn">Login</button>
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
         </form>
     </div>
 
     <!-- Make sure login.js is correctly linked and loaded as a module -->
-    <script type="module" src="login.js"></script>
+    <script type="module" src="admin.js"></script>
 </body>
 </html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventFlow Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">EventFlow</h2>
+                <div class="mobile-toggle" id="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> My Events</a></li>
+                    <li><a href="#"><i class="fas fa-ticket-alt"></i> Tickets</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link"><i class="fas fa-question-circle"></i> Help & Support</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation -->
+            <header class="top-nav">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search events...">
+                </div>
+                <div class="user-menu">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Profile">
+                        <span>Emma Watson</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <h1 class="page-title">My Dashboard</h1>
+                
+                <!-- Stats Cards -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon upcoming">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Upcoming Events</h3>
+                            <p class="stat-number">4</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon past">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Past Events</h3>
+                            <p class="stat-number">12</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon tickets">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Active Tickets</h3>
+                            <p class="stat-number">7</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon favorites">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Favorites</h3>
+                            <p class="stat-number">5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Section -->
+                <section class="events-section">
+                    <div class="section-header">
+                        <h2>My Events</h2>
+                        <div class="filter-options">
+                            <select id="event-filter">
+                                <option value="all">All Events</option>
+                                <option value="upcoming">Upcoming</option>
+                                <option value="past">Past</option>
+                            </select>
+                            <button class="view-toggle" id="grid-view"><i class="fas fa-th-large"></i></button>
+                            <button class="view-toggle active" id="list-view"><i class="fas fa-list"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Events List -->
+                    <div class="events-container list-view" id="events-container">
+                        <!-- Event Card 1 -->
+                        <div class="event-card" data-category="upcoming">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" alt="Music Festival">
+                                <span class="event-date">
+                                    <span class="day">15</span>
+                                    <span class="month">JUN</span>
+                                </span>
+                            </div>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <h3 class="event-title">Summer Music Festival</h3>
+                                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Central Park, New York</p>
+                                    <p class="event-time"><i class="fas fa-clock"></i> 4:00 PM - 11:00 PM</p>
+                                    <div class="event-tags">
+                                        <span class="tag">Music</span>
+                                        <span class="tag">Festival</span>
+                                        <span class="tag">Outdoor</span>
+                                    </div>
+                                </div>
+                                <div class="event-actions">
+                                    <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                                    <button class="btn-delete" data-event-id="1"><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                            <div class="event-status upcoming">Upcoming</div>
+                        </div>
+
+                        <!-- Event Card 2 -->
+                        <div class="event-card" data-category="upcoming">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622" alt="Tech Conference">
+                                <span class="event-date">
+                                    <span class="day">22</span>
+                                    <span class="month">JUN</span>
+                                </span>
+                            </div>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <h3 class="event-title">Global Tech Summit</h3>
+                                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Convention Center, San Francisco</p>
+                                    <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</p>
+                                    <div class="event-tags">
+                                        <span class="tag">Technology</span>
+                                        <span class="tag">Conference</span>
+                                        <span class="tag">Networking</span>
+                                    </div>
+                                </div>
+                                <div class="event-actions">
+                                    <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                                    <button class="btn-delete" data-event-id="2"><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                            <div class="event-status upcoming">Upcoming</div>
+                        </div>
+
+                        <!-- Event Card 3 -->
+                        <div class="event-card" data-category="upcoming">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1470753937643-efeb931202a9" alt="Food Festival">
+                                <span class="event-date">
+                                    <span class="day">05</span>
+                                    <span class="month">JUL</span>
+                                </span>
+                            </div>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <h3 class="event-title">International Food Festival</h3>
+                                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Waterfront Park, Chicago</p>
+                                    <p class="event-time"><i class="fas fa-clock"></i> 11:00 AM - 8:00 PM</p>
+                                    <div class="event-tags">
+                                        <span class="tag">Food</span>
+                                        <span class="tag">Cultural</span>
+                                        <span class="tag">Family</span>
+                                    </div>
+                                </div>
+                                <div class="event-actions">
+                                    <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                                    <button class="btn-delete" data-event-id="3"><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                            <div class="event-status upcoming">Upcoming</div>
+                        </div>
+
+                        <!-- Event Card 4 -->
+                        <div class="event-card" data-category="past">
+                            <div class="event-image">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87" alt="Business Workshop">
+                                <span class="event-date">
+                                    <span class="day">28</span>
+                                    <span class="month">MAY</span>
+                                </span>
+                            </div>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <h3 class="event-title">Business Leadership Workshop</h3>
+                                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Grand Hotel, Boston</p>
+                                    <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                                    <div class="event-tags">
+                                        <span class="tag">Business</span>
+                                        <span class="tag">Workshop</span>
+                                        <span class="tag">Professional</span>
+                                    </div>
+                                </div>
+                                <div class="event-actions">
+                                    <button class="btn-view"><i class="fas fa-eye"></i> View</button>
+                                    <button class="btn-delete" data-event-id="4"><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                            <div class="event-status past">Past</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Calendar Section -->
+                <section class="calendar-section">
+                    <div class="section-header">
+                        <h2>Upcoming Schedule</h2>
+                        <button class="btn-calendar"><i class="fas fa-calendar-alt"></i> Full Calendar</button>
+                    </div>
+                    <div class="mini-calendar" id="mini-calendar">
+                        <div class="calendar-header">
+                            <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                            <h3 id="calendar-month">June 2023</h3>
+                            <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="calendar-day-header">Sun</div>
+                            <div class="calendar-day-header">Mon</div>
+                            <div class="calendar-day-header">Tue</div>
+                            <div class="calendar-day-header">Wed</div>
+                            <div class="calendar-day-header">Thu</div>
+                            <div class="calendar-day-header">Fri</div>
+                            <div class="calendar-day-header">Sat</div>
+                            <!-- Calendar days will be generated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal" id="delete-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirm Deletion</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete this event? This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-confirm">Delete Event</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

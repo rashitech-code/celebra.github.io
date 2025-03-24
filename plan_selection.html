@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Plans - Celebra Events</title>
+    <link rel="stylesheet" href="plan_selection.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="Website Logo" class="logo">
+        <h1>Celebra Events</h1>
+        <p>Your Dream Event, Our Passion</p>
+    </header>
+
+    <div id="successMessage" style="display: none; color: green; font-weight: bold;"></div>
+
+    <main>
+        <!-- ✅ Fix: Add the missing event title -->
+        <h2 id="eventTitle">Loading event...</h2> 
+
+        <div class="plan-selection">
+            <h2>Select an Event Plan</h2>
+            <select id="planSelector">
+                <option value="" disabled selected>Select a Plan</option>
+                <option value="starter">Starter Gathering - ₹8,000</option>
+                <option value="smallFamily">Small Family Event - ₹12,000</option>
+                <option value="budget">Budget Celebration - ₹15,000</option>
+                <option value="simpleBirthday">Simple Birthday Party - ₹18,000</option>
+                <option value="miniParty">Mini Party Plan - ₹20,000</option>
+                <option value="advancedKitty">Advanced Kitty Party - ₹25,000</option>
+                <option value="familyGathering">Family Gathering Plan - ₹35,000</option>
+                <option value="birthdayBash">Birthday Bash - ₹40,000</option>
+                <option value="wedding">Advanced Wedding Celebration - ₹50,000</option>
+                <option value="thematic">Thematic Small Party - ₹60,000</option>
+                <option value="luxuryFamily">Luxury Family Plan - ₹75,000</option>
+                <option value="premiumWedding">Premium Wedding Package - ₹1,00,000</option>
+                <option value="plushBirthday">Plush Birthday Party - ₹1,20,000</option>
+                <option value="corporate">Corporate Premium Plan - ₹1,50,000</option>
+                <option value="elite">Elite Party Plan - ₹2,00,000</option>
+            </select>
+
+            <div id="planDetails"></div>
+
+            <button id="showPlans">Show All Plans</button>
+            <button id="submitPlan">Submit</button>
+        </div>
+    </main>
+
+    <!-- Dialog for all plans -->
+    <dialog id="plansDialog">
+        <div class="dialog-content">
+            <h2>Available Event Plans</h2>
+            <div id="plansList"></div>
+            <button id="closeDialog">Close</button>
+        </div>
+    </dialog>
+
+    <script type="module" src="plan_selection.js"></script>
+
+</body>
+
+</html>
