@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Event Planning</title>
+    <link rel="stylesheet" href="professional.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Professional Event Planning</h1>
+            <p>From conferences and seminars to networking events, we ensure your event leaves a positive impact.</p>
+        </div>
+    </div>
+</header>
+
+<form id="professionalEventForm">
+    <h2>Event Details</h2>
+    <label for="host-name">Host Name:</label>
+    <input type="text" id="host-name" name="host-name" required>
+
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" required>
+
+    <label for="event-type">Type of Event:</label>
+    <select id="event-type" name="event-type" required>
+        <option value="Conference">Conference</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Networking Event">Networking Event</option>
+        <option value="Corporate Function">Corporate Function</option>
+    </select>
+
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" id="contact-number" name="contact-number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <label for="guest-number">Number of Attendees:</label>
+    <input type="number" id="guest-number" name="guest-number" min="1" required>
+
+    <label for="venue">Venue:</label>
+    <input type="text" id="venue" name="venue" required>
+
+    <h2>Customization Options</h2>
+
+    <div class="customization">
+        <h3>Event Setup:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="setup" value="Stage"> Stage</label>
+            <label><input type="checkbox" name="setup" value="Audio-Visual Equipment"> Audio-Visual Equipment</label>
+            <label><input type="checkbox" name="setup" value="Podium"> Podium</label>
+            <label><input type="checkbox" name="setup" value="Lighting"> Lighting</label>
+            <label><input type="checkbox" name="setup" value="Seating Arrangements"> Seating Arrangements</label>
+            <label><input type="checkbox" name="setup" value="Signage"> Signage</label>
+            <label><input type="checkbox" name="setup" value="Registration Desk"> Registration Desk</label>
+            <label><input type="checkbox" name="setup" value="Exhibit Booths"> Exhibit Booths</label>
+        </div>
+        <label for="custom-setup">Other Setup Requirements:</label>
+        <input type="text" id="custom-setup" name="custom-setup" placeholder="Describe any additional setup requests">
+    </div>
+
+    <div class="customization">
+        <h3>Catering:</h3>
+        <label for="catering-type">Catering Type:</label>
+        <select id="catering-type" name="catering-type">
+            <option value="Buffet">Buffet</option>
+            <option value="Plated Meal">Plated Meal</option>
+            <option value="Coffee Breaks">Coffee Breaks</option>
+            <option value="Cocktail Reception">Cocktail Reception</option>
+        </select>
+
+        <label for="cuisine">Cuisine Preferences:</label>
+        <input type="text" id="cuisine" name="cuisine" placeholder="Specify cuisine preferences">
+
+        <label for="dietary-restrictions">Dietary Restrictions:</label>
+        <textarea id="dietary-restrictions" name="dietary-restrictions" rows="3" placeholder="List any dietary restrictions"></textarea>
+    </div>
+
+    <div class="customization">
+        <h3>Event Management Services:</h3>
+        <label><input type="checkbox" name="management" value="Event Coordinator"> Event Coordinator</label>
+        <label><input type="checkbox" name="management" value="Technical Support"> Technical Support</label>
+        <label><input type="checkbox" name="management" value="Security Personnel"> Security Personnel</label>
+        <label><input type="checkbox" name="management" value="Guest Registration Desk"> Guest Registration Desk</label>
+        <label><input type="checkbox" name="management" value="Ushers"> Ushers</label>
+        <label><input type="checkbox" name="management" value="Photographer/Videographer"> Photographer/Videographer</label>
+    </div>
+
+    <h2>Additional Services</h2>
+    <label for="additional-services">Additional Services:</label>
+    <textarea id="additional-services" name="additional-services" rows="5" placeholder="Provide any additional service requests..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Event Plan</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 Professional Event Planning Services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="professional.js"></script>
+</body>
+</html>

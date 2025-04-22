@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Event Planning</title>
+    <link rel="stylesheet" href="wedding.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Wedding Event Planning</h1>
+            <p>Design your dream wedding with us</p>
+        </div>
+    </div>
+</header>
+
+<form id="weddingForm">
+    <h2>Wedding Event Details</h2>
+    <label for="groom-name">Groom's Name:</label>
+    <input type="text" id="groom-name" name="groom-name" required>
+
+    <label for="bride-name">Bride's Name:</label>
+    <input type="text" id="bride-name" name="bride-name" required>
+
+    <label for="contact-number-1">Contact Number 1:</label>
+    <input type="text" id="contact-number-1" name="contact-number-1" required>
+
+    <label for="contact-number-2">Contact Number 2:</label>
+    <input type="text" id="contact-number-2" name="contact-number-2">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="location">Wedding Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="event-date">Wedding Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <label for="guest-number">Number of Guests:</label>
+    <input type="number" id="guest-number" name="guest-number" min="1" required>
+
+    <label for="venue">Venue:</label>
+    <input type="text" id="venue" name="venue" required>
+
+    <label for="theme">Wedding Theme:</label>
+    <input type="text" id="theme" name="theme">
+
+    <h2>Customization Options</h2>
+
+    <div class="customization">
+        <h3>Decoration:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="decoration" value="Floral Arrangements"> Floral Arrangements</label>
+            <label><input type="checkbox" name="decoration" value="Lighting"> Lighting</label>
+            <label><input type="checkbox" name="decoration" value="Backdrop"> Backdrop</label>
+            <label><input type="checkbox" name="decoration" value="Centerpieces"> Centerpieces</label>
+            <label><input type="checkbox" name="decoration" value="Table Settings"> Table Settings</label>
+            <label><input type="checkbox" name="decoration" value="Stage Setup"> Stage Setup</label>
+            <label><input type="checkbox" name="decoration" value="Customized Signage"> Customized Signage</label>
+        </div>
+        <label for="custom-decor">Other Customized Decoration:</label>
+        <input type="text" id="custom-decor" name="custom-decor" placeholder="Describe any additional decoration requests">
+    </div>
+
+    <div class="customization">
+        <h3>Catering:</h3>
+        <label for="catering-type">Catering Type:</label>
+        <select id="catering-type" name="catering-type">
+            <option value="Buffet">Buffet</option>
+            <option value="Sit-down meal">Sit-down meal</option>
+            <option value="Food stations">Food stations</option>
+            <option value="Finger foods">Finger foods</option>
+        </select>
+
+        <label for="cuisine">Cuisine:</label>
+        <input type="text" id="cuisine" name="cuisine">
+
+        <h3>Food Items:</h3>
+        <label for="main-course">Main Course:</label>
+        <input type="text" id="main-course" name="main-course" placeholder="Specify main course items">
+
+        <label for="snacks">Snacks:</label>
+        <input type="text" id="snacks" name="snacks" placeholder="Specify snack items">
+
+        <label for="desserts">Desserts:</label>
+        <input type="text" id="desserts" name="desserts" placeholder="Specify dessert items">
+
+        <label for="drinks">Drinks:</label>
+        <input type="text" id="drinks" name="drinks" placeholder="Specify drinks">
+
+        <label for="cake-flavor">Cake Flavor:</label>
+        <input type="text" id="cake-flavor" name="cake-flavor" placeholder="Specify the cake flavor">
+
+        <label for="cake-size">Cake Size:</label>
+        <input type="text" id="cake-size" name="cake-size" placeholder="Specify the cake size (e.g., 1kg, 2kg)">
+    </div>
+
+    <div class="customization">
+        <h3>Dress Code and Customization:</h3>
+        
+        <label for="dress-code">Dress Code:</label>
+        <input type="text" id="dress-code" name="dress-code" placeholder="Specify the dress code (e.g., Formal, Semi-formal)">
+    
+        <!-- Groom's Dress Customization -->
+        <h4>Groom's Dress Details:</h4>
+        <h5>type no if not required</h5>
+        <label for="groom-dress-type">Type of Dress:</label>
+        <input type="text" id="groom-dress-type" name="groom-dress-type" placeholder="e.g., Suits, Sherwanis, Tuxedos">
+        
+        <label for="groom-dress-quantity">Number of Dresses:</label>
+        <input type="number" id="groom-dress-quantity" name="groom-dress-quantity" min="0" placeholder="Enter number of dresses needed">
+    
+        <label for="groom-dress-size">Sizes Required:</label>
+        <input type="text" id="groom-dress-size" name="groom-dress-size" placeholder="e.g., M, L, XL">
+    
+        <!-- Bride's Dress Customization -->
+        <h4>Bride's Dress Details:</h4>
+        <label for="bride-dress-type">Type of Dress:</label>
+        <input type="text" id="bride-dress-type" name="bride-dress-type" placeholder="e.g., Gowns, Lehengas, Sarees">
+        
+        <label for="bride-dress-quantity">Number of Dresses:</label>
+        <input type="number" id="bride-dress-quantity" name="bride-dress-quantity" min="0" placeholder="Enter number of dresses needed">
+    
+        <label for="bride-dress-size">Sizes Required:</label>
+        <input type="text" id="bride-dress-size" name="bride-dress-size" placeholder="e.g., S, M, L, XL">
+    
+    </div>
+
+    <label for="handwritten-note">Handwritten Note (for Invitations):</label>
+    <textarea id="handwritten-note" name="handwritten-note" rows="4" placeholder="Write a personal note"></textarea>
+
+    <p>Please make sure to fill in the common and basic information regarding your wedding event. We will contact you using the provided information.</p>
+
+    <button type="submit" class="submit-btn">Submit Wedding Event Plan</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 Wedding Event Planning Services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="wedding.js"></script>
+</body>
+</html>

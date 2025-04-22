@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Event Planning</title>
+    <link rel="stylesheet" href="spiritual.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Spiritual Event Planning</h1>
+            <p>Plan your spiritual event with customized options</p>
+        </div>
+    </div>
+</header>
+
+<form id="spiritualEventForm">
+    <h2>Event Details</h2>
+    <label for="host-name">Host Name:</label>
+    <input type="text" id="host-name" name="host-name" required>
+
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" required>
+
+    <label for="event-type">Type of Spiritual Event:</label>
+    <select id="event-type" name="event-type" required>
+        <option value="Puja">Puja</option>
+        <option value="Meditation Session">Meditation Session</option>
+        <option value="Prayer Gathering">Prayer Gathering</option>
+        <option value="Religious Ceremony">Religious Ceremony</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <label for="guest-number">Number of Attendees:</label>
+    <input type="number" id="guest-number" name="guest-number" min="1" required>
+
+    <label for="venue">Venue:</label>
+    <input type="text" id="venue" name="venue" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" id="contact-number" name="contact-number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <h2>Customization Options</h2>
+
+    <div class="customization">
+        <h3>Decoration:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="decoration" value="Flowers"> Flowers</label>
+            <label><input type="checkbox" name="decoration" value="Lights"> Lights</label>
+            <label><input type="checkbox" name="decoration" value="Candles"> Candles</label>
+            <label><input type="checkbox" name="decoration" value="Incense"> Incense</label>
+            <label><input type="checkbox" name="decoration" value="Holy Symbols"> Holy Symbols</label>
+        </div>
+        <label for="custom-decor">Other Customized Decoration:</label>
+        <input type="text" id="custom-decor" name="custom-decor" placeholder="Describe any additional decoration requests">
+    </div>
+
+    <div class="customization">
+        <h3>Catering:</h3>
+        <label for="catering-type">Catering Type:</label>
+        <select id="catering-type" name="catering-type" required>
+            <option value="Prasad">Prasad</option>
+            <option value="Vegetarian Meals">Vegetarian Meals</option>
+            <option value="Snacks and Beverages">Snacks and Beverages</option>
+            <option value="Custom Food Arrangements">Custom Food Arrangements</option>
+        </select>
+
+        <label for="food-preferences">Food Preferences:</label>
+        <textarea id="food-preferences" name="food-preferences" rows="3" placeholder="Specify any dietary restrictions or food preferences"></textarea>
+    </div>
+
+    <div class="customization">
+        <h3>Event Rituals and Activities:</h3>
+        <label for="rituals">Rituals to be Performed:</label>
+        <textarea id="rituals" name="rituals" rows="3" required placeholder="List any specific rituals or activities (e.g., Aarti, Havan)"></textarea>
+
+        <label for="spiritual-leader">Spiritual Leader / Priest Required:</label>
+        <select id="spiritual-leader" name="spiritual-leader" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="priest-details">Details of the Spiritual Leader / Priest (if required):</label>
+        <textarea id="priest-details" name="priest-details" rows="3" placeholder="Provide details if a spiritual leader is required"></textarea>
+    </div>
+
+    <div class="customization">
+        <h3>Event Management:</h3>
+        <label><input type="checkbox" name="management" value="On-site Coordinator"> On-site Coordinator</label>
+        <label><input type="checkbox" name="management" value="Host"> Host</label>
+        <label><input type="checkbox" name="management" value="Security"> Security</label>
+        <label><input type="checkbox" name="management" value="Sound and AV Setup"> Sound and AV Setup</label>
+    </div>
+
+    <h2>Personalized Invitation</h2>
+    <label for="handwritten-note">Specific Note:</label>
+    <textarea id="handwritten-note" name="handwritten-note" rows="5" placeholder="Write a personal note/slogan for your invitations..."></textarea>
+
+    <h2>Additional Information</h2>
+    <label for="additional-info">Any additional requests or details:</label>
+    <textarea id="additional-info" name="additional-info" rows="5" placeholder="Provide any additional requests or details..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Event Plan</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 baby shower event planning services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="spiritual.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --background-color: #f5f7fa;
+    --container-bg: rgba(255, 255, 255, 0.9);
+    --text-color: #333;
+    --input-bg: #f9fafb;
+    --input-border: #e5e7eb;
+    --input-focus: #4f46e5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --error-color: #ef4444;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Background Bubbles Animation */
+  .background-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: rise 15s infinite ease-in;
+  }
+  
+  .bubble:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    animation-duration: 18s;
+  }
+  
+  .bubble:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    animation-duration: 12s;
+    animation-delay: 1s;
+  }
+  
+  .bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 60%;
+    animation-duration: 15s;
+    animation-delay: 2s;
+  }
+  
+  .bubble:nth-child(4) {
+    width: 70px;
+    height: 70px;
+    left: 80%;
+    animation-duration: 20s;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(0) rotate(0);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(-650px) rotate(180deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Signup Container */
+  .signup-container {
+    background: var(--container-bg);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px var(--shadow-color), 0 10px 10px -5px var(--shadow-color);
+    width: 90%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    transform: translateY(0);
+    animation: container-appear 0.6s ease-out;
+  }
+  
+  @keyframes container-appear {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .signup-container h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .signup-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), #a78bfa);
+    border-radius: 3px;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 0.5rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: var(--input-focus);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  }
+  
+  .input-group.error input {
+    border-color: var(--error-color);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+  }
+  
+  .input-group input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .signup-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(90deg, var(--primary-color), #6366f1);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .signup-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s ease;
+  }
+  
+  .signup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  }
+  
+  .signup-btn:hover::before {
+    left: 100%;
+  }
+  
+  .signup-btn:active {
+    transform: translateY(0);
+  }
+  
+  .signup-container p {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .signup-container a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-container a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .signup-container {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  /* Add some animation to form elements */
+  #signup-form {
+    animation: fade-in 0.8s ease-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Staggered animation for form elements */
+  .input-group:nth-child(1) {
+    animation: slide-in 0.5s ease-out 0.2s both;
+  }
+  
+  .input-group:nth-child(2) {
+    animation: slide-in 0.5s ease-out 0.4s both;
+  }
+  
+  .input-group:nth-child(3) {
+    animation: slide-in 0.5s ease-out 0.6s both;
+  }
+  
+  .signup-btn {
+    animation: slide-in 0.5s ease-out 0.8s both;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Ripple effect */
+  .signup-btn {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  /* Loading state */
+  .signup-btn.loading {
+    background: linear-gradient(90deg, var(--primary-color), #6366f1);
+    cursor: wait;
+  }
+  
+  /* Password strength indicator */
+  .password-strength {
+    height: 5px;
+    margin-top: 0.5rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    background: #e5e7eb;
+    overflow: hidden;
+  }
+  
+  .password-strength-bar {
+    height: 100%;
+    width: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .strength-weak .password-strength-bar {
+    width: 33.33%;
+    background-color: #ef4444;
+  }
+  
+  .strength-medium .password-strength-bar {
+    width: 66.66%;
+    background-color: #f59e0b;
+  }
+  
+  .strength-strong .password-strength-bar {
+    width: 100%;
+    background-color: #10b981;
+  }
+  
+  /* Password visibility toggle */
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    cursor: pointer;
+    color: #9ca3af;
+    transition: color 0.3s ease;
+  }
+  
+  .password-toggle:hover {
+    color: var(--text-color);
+  }
+  
+  /* Focused input styling */
+  .input-group.focused label {
+    color: var(--primary-color);
+  }
