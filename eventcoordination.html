@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Coordination</title>
+    <link rel="stylesheet" href="eventcoordination.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Event Coordination</h1>
+            <p>Organize your event with our expert staff and management</p>
+        </div>
+    </div>
+</header>
+
+<form id="eventForm">
+    <h2>Event Coordination Details</h2>
+
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" required>
+
+    <label for="event-type">Event Type:</label>
+    <input type="text" id="event-type" name="event-type" required placeholder="e.g., Sports, Wedding, Corporate Event">
+
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" id="contact-number" name="contact-number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <h2>Staff Requirements</h2>
+    <div class="customization">
+        <h3>Staff Numbers:</h3>
+        <label for="staff-type">Number of Staff Required:</label>
+        <div class="checkbox-group">
+            <label>Choreographers: <input type="number" name="choreographers" min="0" placeholder="Enter number"></label>
+            <label>Caterers: <input type="number" name="caterers" min="0" placeholder="Enter number"></label>
+            <label>Photographers: <input type="number" name="photographers" min="0" placeholder="Enter number"></label>
+            <label>Videographers: <input type="number" name="videographers" min="0" placeholder="Enter number"></label>
+            <label>Waiters: <input type="number" name="waiters" min="0" placeholder="Enter number"></label>
+            <label>Jokers: <input type="number" name="jokers" min="0" placeholder="Enter number"></label>
+            <label>Magicians: <input type="number" name="magicians" min="0" placeholder="Enter number"></label>
+            <label>Singers: <input type="number" name="singers" min="0" placeholder="Enter number"></label>
+            <label>Musicians: <input type="number" name="musicians" min="0" placeholder="Enter number"></label>
+            <label>Bands: <input type="number" name="bands" min="0" placeholder="Enter number"></label>
+        </div>
+    </div>
+
+    <h2>Staff Dress Code</h2>
+    <div class="radio-group">
+        <h3>Dress Code Selection:</h3>
+        <label>Select Dress Code for Staff:</label>
+        <label><input type="radio" name="staff-dress-code" value="Formal"> Formal</label>
+        <label><input type="radio" name="staff-dress-code" value="Semi-Formal"> Semi-Formal</label>
+        <label><input type="radio" name="staff-dress-code" value="Casual"> Casual</label>
+        <label><input type="radio" name="staff-dress-code" value="Custom"> Custom (Specify below)</label>
+    </div>
+    <label for="custom-staff-dress">Custom Dress for Staff:</label>
+    <input type="text" id="custom-staff-dress" name="custom-staff-dress" placeholder="Describe custom staff dress (if any)">
+
+    <h2>Management Team Requirements</h2>
+    <div class="management-team">
+        <h3>Management Personnel:</h3>
+        <label for="on-site-coordinator">On-site Coordinator:</label>
+        <input type="number" id="on-site-coordinator" name="on-site-coordinator" min="0" placeholder="Enter number">
+
+        <label for="host">Host:</label>
+        <input type="number" id="host" name="host" min="0" placeholder="Enter number">
+
+        <label for="security">Security Personnel:</label>
+        <input type="number" id="security" name="security" min="0" placeholder="Enter number">
+
+        <label for="photographer">Photographers:</label>
+        <input type="number" id="photographer" name="photographer" min="0" placeholder="Enter number">
+
+        <label for="choreographer">Choreographers:</label>
+        <input type="number" id="choreographer" name="choreographer" min="0" placeholder="Enter number">
+    </div>
+
+    <h2>Additional Information</h2>
+    <label for="additional-info">Any additional requests or details:</label>
+    <textarea id="additional-info" name="additional-info" rows="5" placeholder="Provide any additional requests or details..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Event Plan</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 Event Coordination Services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="eventcoordination.js"></script>
+</body>
+</html>

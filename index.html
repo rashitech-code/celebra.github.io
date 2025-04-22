@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+ 
+    <header>
+        <img src="logo.jpg" alt="Website Logo" class="logo"> 
+         <h1>Celebra Events</h1>
+        <p>Your Dream Event, Our Passion</p>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="plans.html">Plans</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Making Your Dreams Come True</h1>
+                <div class="hero-buttons">
+                    <a href="login.html" class="cta-button1">Login</a>
+                    <a href="#services" class="cta-button">Explore Our Services</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Events Planned</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="98">0</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Expert Planners</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+
+        <div class="about-us">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="why celebra.png" alt="Why Choose Celebra Events" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">Why Choose Celebra Events?</h2>
+                    <p class="about-text">
+                        At Celebra Events, we believe every celebration is a unique story waiting to be told. Our team of
+                        experienced planners and creative professionals are here to make your expectation a reality, tailored to
+                        your preferences and needs. From intimate gatherings to grand celebrations, we handle every detail with
+                        passion, precision, and flair.
+                    </p>
+                    <p class="about-text">
+                        With years of experience in the industry, we have successfully orchestrated countless events that have left lasting impressions. Our dedicated team brings together creativity, expertise, and attention to detail to ensure your event stands out.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="vision-section">
+            <div class="vision-container">
+                <div class="vision-content">
+                    <h2 class="vision-title">Driven By A Good Vision</h2>
+                    <p class="vision-text">
+                        Our vision is to establish ourselves as the foremost event management company in India, dedicated to crafting experiences that etch cherished memories into the tapestry of your life. We aspire to create impactful and transformational events that not only celebrate your success but also translate it into tangible value.
+                    </p>
+                    <p class="vision-text">
+                        Our commitment is to consistently meet and exceed your expectations, fueled by a combination of excellent ideas and flawless execution. We envision a future where every event we undertake becomes a milestone in your journey, leaving an indelible mark on your memory lane that lasts a lifetime.
+                    </p>
+                </div>
+                <div class="vision-image">
+                    <img src="event vision.png" alt="Celebra Events Vision" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2 style="text-align: center; color: #1F2544; font-size: 2.5rem; margin-bottom: 30px;">What Our Clients Say</h2>
+            <div class="testimonial-grid" id="testimonialGrid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Celebra Events transformed our wedding into a magical experience. Their attention to detail and creativity exceeded our expectations!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="priya.webp" alt="Priya & Rajesh" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Priya & Rajesh</span>
+                            <span class="testimonial-location">Mumbai, Maharashtra</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The team's professionalism and dedication made our corporate event a huge success. Highly recommended!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="arun.jpg" alt="Arun Kumar" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Arun Kumar</span>
+                            <span class="testimonial-location">Bangalore, Karnataka</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Outstanding service! They handled every aspect of our daughter's birthday party perfectly."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="meera patel.jpeg" alt="Meera Patel" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Meera Patel</span>
+                            <span class="testimonial-location">Ahmedabad, Gujarat</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "An exceptional team that made our destination wedding in Goa absolutely perfect. Every detail was taken care of!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="vikram.jpg" alt="Aditi & Vikram" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Aditi & Vikram</span>
+                            <span class="testimonial-location">Delhi, NCR</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The most organized and creative team we've worked with. Our corporate event in Chennai was a grand success!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="karthik.jpeg" alt="Karthik Sundaram" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Karthik Sundaram</span>
+                            <span class="testimonial-location">Chennai, Tamil Nadu</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "From planning to execution, everything was flawless. Our anniversary celebration was beyond our expectations!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="neha.jpg" alt="Neha & Amit" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Neha & Amit</span>
+                            <span class="testimonial-location">Hyderabad, Telangana</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The team's creativity and attention to detail made our daughter's wedding in Jaipur absolutely magical!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="rahul.jpeg" alt="Rahul & Priyanka" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Rahul & Priyanka</span>
+                            <span class="testimonial-location">Jaipur, Rajasthan</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Outstanding service for our company's annual day event. The team's coordination was impeccable!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="sanjay.jpg" alt="Sanjay Verma" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Sanjay Verma</span>
+                            <span class="testimonial-location">Pune, Maharashtra</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "A perfect blend of tradition and modernity in our wedding celebration. The team understood our vision perfectly!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="anjali.jpeg" alt="Anjali & Rohan" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Anjali & Rohan</span>
+                            <span class="testimonial-location">Kolkata, West Bengal</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The most memorable birthday celebration for our son. The team's creativity and enthusiasm were outstanding!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="deepika.jpeg" alt="Deepika & Rajesh" class="testimonial-profile">
+                        <div class="testimonial-info">
+                            <span>Deepika & Rajesh</span>
+                            <span class="testimonial-location">Chandigarh, Punjab</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+            </div>
+            <button class="testimonial-nav testimonial-prev" id="testimonialPrev">❮</button>
+            <button class="testimonial-nav testimonial-next" id="testimonialNext">❯</button>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+
+        <!-- Add testimonial modal -->
+        <div class="testimonial-modal" id="testimonialModal">
+            <div class="testimonial-modal-content">
+                <span class="testimonial-modal-close" id="testimonialModalClose">&times;</span>
+                <div class="testimonial-content" id="modalContent"></div>
+                <div class="testimonial-author" id="modalAuthor"></div>
+                <div class="testimonial-rating" id="modalRating"></div>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <h2 style="margin-bottom: 20px;">Stay Updated with Event Trends</h2>
+            <p style="margin-bottom: 20px;">Subscribe to our newsletter for the latest event planning tips and exclusive offers!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="countdown-section">
+            <h2 style="margin-bottom: 20px;">Next Event in</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <div class="slider-container">
+                <img src="image1.jpg" class="slider-image" alt="Slider Image 1">
+                <img src="image2.jpg" class="slider-image" alt="Slider Image 2">
+                <img src="image3.jpg" class="slider-image" alt="Slider Image 3">
+                <img src="image4.jpg" class="slider-image" alt="Slider Image 4">
+                <img src="image5.jpg" class="slider-image" alt="Slider Image 5">
+                <img src="image6.jpg" class="slider-image" alt="Slider Image 6">
+                <img src="image7.jpg" class="slider-image" alt="Slider Image 7">
+                <img src="image8.jpg" class="slider-image" alt="Slider Image 8">
+                <img src="image9.jpg" class="slider-image" alt="Slider Image 9">
+                <img src="image10.jpg" class="slider-image" alt="Slider Image 10">
+            </div>
+            <button class="slider-button left" id="slideLeft">&#10094;</button>
+            <button class="slider-button right" id="slideRight">&#10095;</button>
+        </div>
+        
+        <div class="content" id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <a href="services.html#services" class="service-item">
+                    <h3>Events Planning</h3>
+                    <p>From venue selection to final touches, we plan every detail.</p>
+                </a>
+                <a href="services.html#services" class="service-item">
+                    <h3>Event Coordination</h3>
+                    <p>Seamless coordination for stress-free events.</p>
+                </a>
+                <a href="services.html#services" class="service-item">
+                    <h3>Brand activation event</h3>
+                    <p>Connect, Engage, and Activate: Elevate Your Brand Experience with Us!</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="note-section" style="padding: 40px 20px; background-color: #f8f9fa; margin: 40px 0;">
+            <div class="note-container" style="max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #1F2544; font-size: 1.8rem; display: flex; align-items: center; margin-bottom: 20px;">
+                    <span style="font-size: 2rem; margin-right: 12px;">📝</span> Important Note for Your Event
+                </h3>
+                <div style="border-left: 4px solid #1F2544; padding-left: 20px;">
+                    <p style="font-size: 1.1rem; color: #333; line-height: 1.8; margin-bottom: 20px;">
+                        Please fill out the form with the most common and basic information about your event, such as the
+                        host's and the guest of honor's details, contact information, event location, and specific
+                        preferences for dress, cake, catering, and more. This helps us understand your needs and allows us
+                        to provide the best service.
+                    </p>
+                    <p style="font-size: 1.1rem; color: #1F2544; font-style: italic; line-height: 1.8;">
+                        After receiving your form, our team will reach out to you to discuss your event further. Let us
+                        handle the planning so you can relax and enjoy your special day!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-highlights">
+            <div class="highlight-card">
+                <div class="highlight-icon">🎯</div>
+                <div class="highlight-title">Custom Planning</div>
+                <div class="highlight-text">Tailored solutions for your unique event needs</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">💎</div>
+                <div class="highlight-title">Premium Quality</div>
+                <div class="highlight-text">High-end services and attention to detail</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🤝</div>
+                <div class="highlight-title">Expert Team</div>
+                <div class="highlight-text">Experienced professionals at your service</div>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">✨</div>
+                <div class="highlight-title">Creative Ideas</div>
+                <div class="highlight-text">Innovative concepts for memorable events</div>
+            </div>
+        </div>
+
+        <div class="event-gallery">
+            <div class="gallery-item">
+                <img src="event gallery.jpg" alt="Event Gallery">
+                <div class="gallery-overlay">
+                    <h3>Event Gallery</h3>
+                    <p>Capturing moments that matter</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Celebra Events | Designed with love</p>
+        <div class="social-icons">
+            <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+            <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter"
+                    style="width: 24px; height: 24px;"></a>
+            <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img
+                    src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+            <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn"
+                    style="width: 24px; height: 24px;"></a>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" id="scrollToTop" title="Back to Top"> &uarr;</div>
+
+    <script>
+
+        // Image Slider Functionality
+     const sliderContainer = document.querySelector('.slider-container');
+     const images = document.querySelectorAll('.slider-image');
+     const leftButton = document.getElementById('slideLeft');
+     const rightButton = document.getElementById('slideRight');
+     let currentIndex = 0;
+
+       // Move to the next image
+     function moveRight() {
+     if (currentIndex < images.length - 1) {
+        currentIndex++;
+     } else {
+        currentIndex = 0;
+     }
+    updateSlider();
+    }
+
+      // Move to the previous image
+    function moveLeft() {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = images.length - 1;
+    }
+    updateSlider();
+    }
+
+       // Update the slider position
+    function updateSlider() {
+    const slideWidth = images[0].clientWidth;
+    sliderContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    // Event listeners for buttons
+    rightButton.addEventListener('click', moveRight);
+    leftButton.addEventListener('click', moveLeft);
+
+    // Optional: Auto-slide images every 5 seconds
+    setInterval(moveRight, 5000);
+
+        window.onscroll = function () {
+            var scrollToTopButton = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopButton.style.display = "block";
+                scrollToTopButton.style.animation = "fadeInUp 0.5s ease";
+            } else {
+                scrollToTopButton.style.display = "none";
+            }
+        };
+        document.getElementById('scrollToTop').onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        // Modal functionality
+        const imageModal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.getElementById('closeModal');
+
+        images.forEach(image => {
+            image.onclick = function () {
+                imageModal.style.display = 'flex';
+                modalImg.src = this.src;
+            };
+        });
+
+        closeBtn.onclick = function () {
+            imageModal.style.display = 'none';
+        };
+
+        window.onclick = function (event) {
+            if (event.target === imageModal) {
+                imageModal.style.display = 'none';
+            }
+        };
+       
+    </script>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const nextEvent = new Date('2024-12-31T00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = nextEvent - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+
+    <script>
+        // Testimonials Slider
+        const testimonialGrid = document.getElementById('testimonialGrid');
+        const testimonialCards = document.querySelectorAll('.testimonial-card');
+        const prevBtn = document.getElementById('testimonialPrev');
+        const nextBtn = document.getElementById('testimonialNext');
+        const dotsContainer = document.getElementById('testimonialDots');
+        const testimonialModal = document.getElementById('testimonialModal');
+        const modalClose = document.getElementById('testimonialModalClose');
+        const modalContent = document.getElementById('modalContent');
+        const modalAuthor = document.getElementById('modalAuthor');
+        const modalRating = document.getElementById('modalRating');
+        
+        let currentSlide = 0;
+        const cardsPerView = 1;
+        const totalSlides = testimonialCards.length;
+        let autoSlideInterval;
+
+        // Create dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('testimonial-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = document.querySelectorAll('.testimonial-dot');
+
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function updateCards() {
+            testimonialCards.forEach((card, index) => {
+                card.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            const offset = currentSlide * -100;
+            testimonialGrid.style.transform = `translateX(${offset}%)`;
+            updateDots();
+            updateCards();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            goToSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            goToSlide(currentSlide);
+        }
+
+        function showTestimonialModal(card) {
+            modalContent.innerHTML = card.querySelector('.testimonial-content').innerHTML;
+            modalAuthor.innerHTML = card.querySelector('.testimonial-author').innerHTML;
+            modalRating.innerHTML = card.querySelector('.testimonial-rating').innerHTML;
+            testimonialModal.classList.add('active');
+            testimonialModal.style.display = 'flex';
+            
+            // Pause auto-sliding when modal is open
+            clearInterval(autoSlideInterval);
+        }
+
+        function closeTestimonialModal() {
+            testimonialModal.classList.remove('active');
+            setTimeout(() => {
+                testimonialModal.style.display = 'none';
+                // Resume auto-sliding when modal is closed
+                startAutoSlide();
+            }, 300);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 12000); // Increased to 12 seconds
+        }
+
+        // Add click event listeners to testimonial cards
+        testimonialCards.forEach(card => {
+            card.addEventListener('click', () => showTestimonialModal(card));
+        });
+
+        modalClose.addEventListener('click', closeTestimonialModal);
+        testimonialModal.addEventListener('click', (e) => {
+            if (e.target === testimonialModal) {
+                closeTestimonialModal();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            clearInterval(autoSlideInterval);
+            prevSlide();
+            startAutoSlide();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            clearInterval(autoSlideInterval);
+            nextSlide();
+            startAutoSlide();
+        });
+
+        // Initialize first card
+        updateCards();
+        startAutoSlide();
+    </script>
+
+    <script>
+        // Count-up animation for stats
+        function animateValue(element, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const currentValue = Math.floor(progress * (end - start) + start);
+                element.textContent = currentValue + (element.dataset.target === '98' ? '%' : 
+                    (element.dataset.target === '24' ? element.dataset.suffix : '+'));
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Intersection Observer for stats animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numberElement = entry.target;
+                    const target = parseInt(numberElement.dataset.target);
+                    animateValue(numberElement, 0, target, 2000);
+                    observer.unobserve(numberElement);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        // Observe all stat numbers
+        document.querySelectorAll('.stat-number').forEach(number => {
+            observer.observe(number);
+        });
+    </script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Website Logo" class="logo">
+        <h1>Celebra Events</h1>
+        <p>Your Dream Event, Our Passion</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Get in Touch with Us</h1>
+    </div>
+
+    <div class="content">
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p style="text-align: center;"> We'd love to hear from you! Fill out the form below to get in touch.</p>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <a href="https://maps.app.goo.gl/p6AohQShjyZtnuSL8" target="_blank"></a>
+                        <div class="info-item-content">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Our Address</h4>
+                            <p>📍 Naini Prayagraj, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <a href="tel:+917007089462" target="_blank"></a>
+                        <div class="info-item-content">
+                            <i class="fas fa-phone-alt"></i>
+                            <h4>Phone</h4>
+                            <p>📞 +91 7007089462</p>
+                            <p>📞 +91 7985285824</p>
+                            <p>📞 +91 8354089617</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <a href="mailto:infocelebra21@gmail.com" target="_blank"></a>
+                        <div class="info-item-content">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <p>📩 infocelebra21@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="event-contact-gallery">
+        <div class="gallery-container">
+            <img src="event contact.jpg" alt="Event Contact" class="gallery-image">
+            <div class="gallery-overlay">
+                <h2 class="gallery-title">Contact Us Gallery</h2>
+                <p class="gallery-text">Get in touch with our team for your dream event</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Celebra Events | Designed with love</p>
+        <div class="social-icons">
+            <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+            <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+            <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+            <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" onclick="scrollToTop()">
+        &uarr;
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        // Show or hide the scroll-to-top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const scrollToTopButton = document.querySelector('.scroll-to-top');
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script type="module" src="contact.js"></script>
+</body>
+</html>

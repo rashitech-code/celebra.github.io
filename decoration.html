@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Decoration</title>
+    <link rel="stylesheet" href="decoration.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Event Decoration</h1>
+            <p>Create the perfect ambiance with our professional decoration services</p>
+        </div>
+    </div>
+</header>
+
+<form id="decorationForm">
+    <h2>Decoration Details</h2>
+
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" required>
+
+    <label for="event-type">Event Type:</label>
+    <input type="text" id="event-type" name="event-type" required placeholder="e.g., Wedding, Birthday, Inauguration">
+
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" id="contact-number" name="contact-number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <h2>Decoration Specifications</h2>
+    <div class="customization">
+        <h3>Decoration Elements:</h3>
+        <label for="lighting">Lighting:</label>
+        <input type="text" id="lighting" name="lighting" placeholder="Specify lighting preferences (e.g., warm, festive)">
+
+        <label for="flowers">Flowers:</label>
+        <input type="text" id="flowers" name="flowers" placeholder="Specify type of flowers or arrangements">
+
+        <label for="balloons">Balloons:</label>
+        <input type="text" id="balloons" name="balloons" placeholder="Specify balloon arrangements (if any)">
+
+        <label for="custom-decor">Custom Decoration Idea:</label>
+        <textarea id="custom-decor" name="custom-decor" rows="5" placeholder="Describe your custom decoration idea"></textarea>
+    </div>
+
+    <h2>Decoration Location</h2>
+    <div class="radio-group">
+        <h3>Location Selection:</h3>
+        <label>Select where you need decoration:</label>
+        <label><input type="radio" name="decoration-location" value="Home"> Home</label>
+        <label><input type="radio" name="decoration-location" value="Building"> Building (Inauguration)</label>
+        <label><input type="radio" name="decoration-location" value="Outdoor"> Outdoor Event</label>
+        <label><input type="radio" name="decoration-location" value="Custom"> Custom (Specify below)</label>
+    </div>
+
+    <label for="custom-location">Custom Location for Decoration:</label>
+    <input type="text" id="custom-location" name="custom-location" placeholder="Describe custom location for decoration (if any)">
+
+    <h2>Additional Information</h2>
+    <label for="additional-info">Any additional requests or details:</label>
+    <textarea id="additional-info" name="additional-info" rows="5" placeholder="Provide any additional requests or details..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Decoration Plan</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 Event Decoration Services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="decoration.js"></script>
+</body>
+</html>
