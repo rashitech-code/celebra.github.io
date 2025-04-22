@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="background-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="login-container">
+        <p id="error-message" class="error-text"></p>
+
+        <h2>Administer Login</h2>
+        <!-- Added ID to form for targeting in JavaScript -->
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username (Email)</label>
+                <!-- Changed input type to "email" for better validation -->
+                <input type="email" id="username" name="username" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+
+    <!-- Make sure login.js is correctly linked and loaded as a module -->
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
