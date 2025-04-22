@@ -19,4 +19,4 @@ const db = getDatabase(firebaseApp);
 const auth = getAuth(firebaseApp); // ✅ Initialize Authentication
 
 // ✅ Export necessary functions and instances
-export { firebaseApp, db, auth, onAuthStateChanged, ref, set, get,db, update, child,  sendPasswordResetEmail ,signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut };
+export { firebaseApp, auth, onAuthStateChanged, ref, set, get,db, update, child,  sendPasswordResetEmail ,signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut };
