@@ -1,0 +1,20 @@
+{
+  "name": "event-planner-backend",
+  "version": "1.0.0",
+  "description": "Backend for Event Planner website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "firebase-admin": "^11.11.0",
+    "firebase": "^10.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+} 

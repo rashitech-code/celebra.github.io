@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Event Planning</title>
+    <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Special Event Planning</h1>
+            <p>Plan your special moments with perfection</p>
+        </div>
+    </div>
+</header>
+
+<form id="eventForm">
+    <h2>Event Details</h2>
+    <label for="event-type">Event Type:</label>
+    <select id="event-type" name="event-type" required>
+        <option value="Surprise Party">Surprise Party</option>
+        <option value="Proposal">Proposal</option>
+        <option value="Milestone Celebration">Milestone Celebration</option>
+        <option value="Graduation">Graduation</option>
+        <option value="Retirement">Retirement</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="host-name">Host Name:</label>
+    <input type="text" id="host-name" name="host-name" required>
+
+    <label for="event-location">Event Location:</label>
+    <input type="text" id="event-location" name="event-location" required>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <label for="guest-number">Number of Guests:</label>
+    <input type="number" id="guest-number" name="guest-number" min="1" required>
+
+    <label for="contact-number">Contact Number:</label>
+    <input type="text" id="contact-number" name="contact-number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <h2>Customization Options</h2>
+
+    <div class="customization">
+        <h3>Surprise Elements:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="surprise-element" value="Hidden Guests"> Hidden Guests</label>
+            <label><input type="checkbox" name="surprise-element" value="Flash Mob"> Flash Mob</label>
+            <label><input type="checkbox" name="surprise-element" value="Special Announcements"> Special Announcements</label>
+            <label><input type="checkbox" name="surprise-element" value="Fireworks"> Fireworks</label>
+        </div>
+        <label for="custom-surprise">Other Surprise Requests:</label>
+        <input type="text" id="custom-surprise" name="custom-surprise" placeholder="Describe any additional surprise requests">
+    </div>
+
+    <div class="customization">
+        <h3>Proposals & Romantic Setups:</h3>
+        <label for="proposal-theme">Proposal Theme:</label>
+        <input type="text" id="proposal-theme" name="proposal-theme" placeholder="Specify theme (e.g., Beach, Rooftop)">
+
+        <label for="proposal-decor">Special Decorations:</label>
+        <input type="text" id="proposal-decor" name="proposal-decor" placeholder="e.g., Flower Arch, Fairy Lights">
+
+        <label for="proposal-music">Music Selection:</label>
+        <input type="text" id="proposal-music" name="proposal-music" placeholder="Specify songs or genres">
+    </div>
+
+    <div class="customization">
+        <h3>Milestone Celebration Details:</h3>
+        <label for="milestone-type">Milestone Type:</label>
+        <input type="text" id="milestone-type" name="milestone-type" placeholder="e.g., 50th Birthday, Silver Jubilee">
+
+        <label for="special-activities">Special Activities:</label>
+        <input type="text" id="special-activities" name="special-activities" placeholder="e.g., Speeches, Performances, Awards">
+
+        <label for="milestone-decor">Decor Theme:</label>
+        <input type="text" id="milestone-decor" name="milestone-decor" placeholder="Specify decor theme">
+    </div>
+
+    <div class="customization">
+        <h3>Event Management:</h3>
+        <label><input type="checkbox" name="management" value="Host/MC"> Host/MC</label>
+        <label><input type="checkbox" name="management" value="Live Band"> Live Band</label>
+        <label><input type="checkbox" name="management" value="Security"> Security</label>
+        <label><input type="checkbox" name="management" value="Photographer"> Photographer</label>
+        <label><input type="checkbox" name="management" value="Catering Staff"> Catering Staff</label>
+    </div>
+
+    <h2>Personalized Touch</h2>
+    <label for="personal-note">Special Notes or Instructions:</label>
+    <textarea id="personal-note" name="personal-note" rows="5" placeholder="Provide any special instructions or notes..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Event Plan</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 Special Event Planning Services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="personal.js"></script>
+</body>
+</html>
