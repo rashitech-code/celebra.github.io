@@ -1,6 +1,6 @@
 // ✅ Import Firebase SDK modules (version 9.6.1)
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-import { getDatabase, ref, set, get, update, child,db} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+import { getDatabase, ref, set, get, update, child} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
 import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail , createUserWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
 // ✅ Firebase Configuration
