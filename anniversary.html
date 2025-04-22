@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Event Planning</title>
+    <link rel="stylesheet" href="anniversary.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Anniversary Event Planning</h1>
+            <p>Plan your special anniversary with personalized touches</p>
+        </div>
+    </div>
+</header>
+
+<form id="anniversaryForm">
+    <h2>Event Details</h2>
+    <label for="host-name">Host Name:</label>
+    <input type="text" id="host-name" name="host-name" required>
+
+    <label for="couple-name">Name of the Couple:</label>
+    <input type="text" id="couple-name" name="couple-name" required>
+
+    <label for="anniversary-type">Anniversary Type:</label>
+    <select id="anniversary-type" name="anniversary-type" required>
+        <option value="Wedding">Wedding</option>
+        <option value="Engagement">Engagement</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="contact-number-1">Contact Number 1:</label>
+    <input type="text" id="contact-number-1" name="contact-number-1" required>
+
+    <label for="contact-number-2">Contact Number 2:</label>
+    <input type="text" id="contact-number-2" name="contact-number-2">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" required>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <label for="guest-number">Number of Guests:</label>
+    <input type="number" id="guest-number" name="guest-number" min="1" required>
+
+    <label for="venue">Venue:</label>
+    <input type="text" id="venue" name="venue" required>
+
+    <label for="theme">Party Theme:</label>
+    <input type="text" id="theme" name="theme">
+
+    <h2>Customization Options</h2>
+
+    <div class="customization">
+        <h3>Decoration:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="decoration" value="Floral Arrangements"> Floral Arrangements</label>
+            <label><input type="checkbox" name="decoration" value="Candles"> Candles</label>
+            <label><input type="checkbox" name="decoration" value="Lights"> Lights</label>
+            <label><input type="checkbox" name="decoration" value="Banners"> Banners</label>
+            <label><input type="checkbox" name="decoration" value="Centerpieces"> Centerpieces</label>
+            <label><input type="checkbox" name="decoration" value="Table Linens"> Table Linens</label>
+            <label><input type="checkbox" name="decoration" value="Chair Covers"> Chair Covers</label>
+            <label><input type="checkbox" name="decoration" value="Backdrop"> Backdrop</label>
+            <label><input type="checkbox" name="decoration" value="Stage Setup"> Stage Setup</label>
+            <label><input type="checkbox" name="decoration" value="Customized Signage"> Customized Signage</label>
+        </div>
+        <label for="custom-decor">Other Customized Decoration:</label>
+        <input type="text" id="custom-decor" name="custom-decor" placeholder="Describe any additional decoration requests">
+    </div>
+
+    <div class="customization">
+        <h3>Catering:</h3>
+        <label for="catering-type">Catering Type:</label>
+        <select id="catering-type" name="catering-type">
+            <option value="Buffet">Buffet</option>
+            <option value="Sit-down meal">Sit-down meal</option>
+            <option value="Food stations">Food stations</option>
+            <option value="Finger foods">Finger foods</option>
+        </select>
+
+        <label for="cuisine">Cuisine:</label>
+        <input type="text" id="cuisine" name="cuisine">
+
+        <h3>Food Items:</h3>
+        <label for="main-course">Main Course:</label>
+        <input type="text" id="main-course" name="main-course" placeholder="Specify main course items">
+
+        <label for="snacks">Snacks:</label>
+        <input type="text" id="snacks" name="snacks" placeholder="Specify snack items">
+
+        <label for="desserts">Desserts:</label>
+        <input type="text" id="desserts" name="desserts" placeholder="Specify dessert items">
+
+        <label for="drinks">Drinks:</label>
+        <input type="text" id="drinks" name="drinks" placeholder="Specify drinks">
+
+        <label for="cake-flavor">Cake Flavor:</label>
+        <input type="text" id="cake-flavor" name="cake-flavor" placeholder="Specify the cake flavor">
+
+        <label for="cake-size">Cake Size:</label>
+        <input type="text" id="cake-size" name="cake-size" placeholder="Specify the cake size (e.g., 1kg, 2kg)">
+    </div>
+
+    <div class="customization">
+        <h3>Dress Code and Customization:</h3>
+        
+        <label for="dress-code">Dress Code:</label>
+        <input type="text" id="dress-code" name="dress-code" placeholder="Specify the dress code (e.g., Formal, Casual)">
+    
+        <!-- Men's Dress Customization -->
+        <h4>Men's Dress Details:</h4>
+        <h5>type no if not required</h5>
+        <label for="mens-dress-type">Type of Dress:</label>
+        <input type="text" id="mens-dress-type" name="mens-dress-type" placeholder="e.g., Suits, Sherwanis, Tuxedos">
+        
+        <label for="mens-dress-quantity">Number of Dresses:</label>
+        <input type="number" id="mens-dress-quantity" name="mens-dress-quantity" min="0" placeholder="Enter number of dresses needed">
+    
+        <label for="mens-dress-size">Sizes Required:</label>
+        <input type="text" id="mens-dress-size" name="mens-dress-size" placeholder="e.g., M, L, XL">
+    
+        <!-- Women's Dress Customization -->
+        <h4>Women's Dress Details:</h4>
+        <h5>type no if not required</h5>
+        <label for="womens-dress-type">Type of Dress:</label>
+        <input type="text" id="womens-dress-type" name="womens-dress-type" placeholder="e.g., Sarees, Gowns, Lehengas">
+    
+        <label for="womens-dress-quantity">Number of Dresses:</label>
+        <input type="number" id="womens-dress-quantity" name="womens-dress-quantity" min="0" placeholder="Enter number of dresses needed">
+    
+        <label for="womens-dress-size">Sizes Required:</label>
+        <input type="text" id="womens-dress-size" name="womens-dress-size" placeholder="e.g., S, M, L, XL">
+    
+        <!-- Kids' Dress Customization -->
+        <h4>Kids' Dress Details:</h4>
+        <h5>type no if not required</h5>
+        <label for="kids-dress-type">Type of Dress:</label>
+        <input type="text" id="kids-dress-type" name="kids-dress-type" placeholder="e.g., Frocks, Suits, Tuxedos">
+    
+        <label for="kids-dress-quantity">Number of Dresses:</label>
+        <input type="number" id="kids-dress-quantity" name="kids-dress-quantity" min="0" placeholder="Enter number of dresses needed">
+    
+        <label for="kids-dress-size">Sizes Required:</label>
+        <input type="text" id="kids-dress-size" name="kids-dress-size" placeholder="e.g., XS, S, M, L">
+    
+        <!-- Elderly Dress Customization -->
+        <h4>Elderly Dress Details:</h4>
+        <h5>type no if not required</h5>
+        <label for="elderly-dress-type">Type of Dress:</label>
+        <input type="text" id="elderly-dress-type" name="elderly-dress-type" placeholder="e.g., Traditional, Comfortable Wear">
+    
+        <label for="elderly-dress-quantity">Number of Dresses:</label>
+        <input type="number" id="elderly-dress-quantity" name="elderly-dress-quantity" min="0" placeholder="Enter number of dresses needed">
+    
+        <label for="elderly-dress-size">Sizes Required:</label>
+        <input type="text" id="elderly-dress-size" name="elderly-dress-size" placeholder="e.g., M, L, XL">
+    </div>
+    
+
+    <div class="customization">
+        <h3>Event Management:</h3>
+        <label><input type="checkbox" name="management" value="On-site Coordinator"> On-site Coordinator</label>
+        <label><input type="checkbox" name="management" value="Host"> Host</label>
+        <label><input type="checkbox" name="management" value="Security"> Security</label>
+        <label><input type="checkbox" name="management" value="Photographer"> Photographer</label>
+        <label><input type="checkbox" name="management" value="Videographer"> Videographer</label>
+    </div>
+
+    <h2>Personalized Invitation</h2>
+    <label for="handwritten-note">Handwritten Note:</label>
+    <textarea id="handwritten-note" name="handwritten-note" rows="5" placeholder="Write a personal note for your invitations..."></textarea>
+
+    <h2>Additional Information</h2>
+    <label for="additional-info">Any additional requests or details:</label>
+    <textarea id="additional-info" name="additional-info" rows="5" placeholder="Provide any additional requests or details..."></textarea>
+
+    <button type="submit" class="submit-btn">Submit Event Plan</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 Anniversary Event Planning Services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="anniversary.js"></script>
+</body>
+</html>

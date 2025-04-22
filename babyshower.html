@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower Event Planning</title>
+    <link rel="stylesheet" href="babyshower.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Celebra Events Logo" class="logo">
+        </div>
+        <div class="header-text">
+            <h1>Baby Shower Event Planning</h1>
+            <p>Plan the perfect celebration for your little one's arrival</p>
+        </div>
+    </div>
+</header>
+
+<form id="babyShowerForm">
+    <h2>Event Details</h2>
+    <label for="host-name">Host Name:</label>
+    <input type="text" id="host-name" name="host-name" required>
+
+    <label for="mother-name">Mother's Name:</label>
+    <input type="text" id="mother-name" name="mother-name" required>
+
+    <label for="father-name">Father's Name:</label>
+    <input type="text" id="father-name" name="father-name">
+
+    <label for="contact-number-1">Contact Number 1:</label>
+    <input type="text" id="contact-number-1" name="contact-number-1" required>
+
+    <label for="contact-number-2">Contact Number 2:</label>
+    <input type="text" id="contact-number-2" name="contact-number-2">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name" name="event-name" value="Baby Shower" required>
+
+    <label for="event-date">Event Date:</label>
+    <input type="date" id="event-date" name="event-date" required>
+
+    <label for="guest-number">Number of Guests:</label>
+    <input type="number" id="guest-number" name="guest-number" min="1" required>
+
+    <label for="venue">Venue:</label>
+    <input type="text" id="venue" name="venue" required>
+
+    <label for="theme">Party Theme:</label>
+    <input type="text" id="theme" name="theme" placeholder="e.g., Baby Animals, Gender Reveal">
+
+    <h2>Customization Options</h2>
+
+    <div class="customization">
+        <h3>Decoration:</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="decoration" value="Balloons"> Balloons</label>
+            <label><input type="checkbox" name="decoration" value="Flowers"> Flowers</label>
+            <label><input type="checkbox" name="decoration" value="Lights"> Lights</label>
+            <label><input type="checkbox" name="decoration" value="Banners"> Banners</label>
+            <label><input type="checkbox" name="decoration" value="Diaper Cake"> Diaper Cake</label>
+            <label><input type="checkbox" name="decoration" value="Baby Blocks"> Baby Blocks</label>
+            <label><input type="checkbox" name="decoration" value="Centerpieces"> Centerpieces</label>
+            <label><input type="checkbox" name="decoration" value="Customized Signage"> Customized Signage</label>
+            <label><input type="checkbox" name="decoration" value="Backdrop"> Backdrop</label>
+        </div>
+        <label for="custom-decor">Other Customized Decoration:</label>
+        <input type="text" id="custom-decor" name="custom-decor" placeholder="Describe any additional decoration requests">
+    </div>
+
+    <div class="customization">
+        <h3>Catering:</h3>
+        <label for="catering-type">Catering Type:</label>
+        <select id="catering-type" name="catering-type">
+            <option value="Buffet">Buffet</option>
+            <option value="Sit-down meal">Sit-down meal</option>
+            <option value="Food stations">Food stations</option>
+            <option value="Finger foods">Finger foods</option>
+        </select>
+
+        <label for="cuisine">Cuisine:</label>
+        <input type="text" id="cuisine" name="cuisine">
+
+        <h3>Food Items:</h3>
+        <label for="main-course">Main Course:</label>
+        <input type="text" id="main-course" name="main-course" placeholder="Specify main course items">
+
+        <label for="snacks">Snacks:</label>
+        <input type="text" id="snacks" name="snacks" placeholder="Specify snack items">
+
+        <label for="desserts">Desserts:</label>
+        <input type="text" id="desserts" name="desserts" placeholder="Specify dessert items">
+
+        <label for="drinks">Drinks:</label>
+        <input type="text" id="drinks" name="drinks" placeholder="Specify drinks">
+
+        <label for="cake-flavor">Cake Flavor:</label>
+        <input type="text" id="cake-flavor" name="cake-flavor" placeholder="Specify the cake flavor">
+
+        <label for="cake-size">Cake Size:</label>
+        <input type="text" id="cake-size" name="cake-size" placeholder="Specify the cake size (e.g., 1kg, 2kg)">
+    </div>
+
+    <div class="customization">
+        <h3>Games and Activities:</h3>
+        <label><input type="checkbox" name="games" value="Diaper Changing Challenge"> Diaper Changing Challenge</label>
+        <label><input type="checkbox" name="games" value="Baby Name Suggestions"> Baby Name Suggestions</label>
+        <label><input type="checkbox" name="games" value="Guess the Baby Food"> Guess the Baby Food</label>
+        <label><input type="checkbox" name="games" value="Baby Bingo"> Baby Bingo</label>
+        <label><input type="checkbox" name="games" value="Pin the Pacifier on the Baby"> Pin the Pacifier on the Baby</label>
+        <label><input type="checkbox" name="games" value="Baby Advice Cards"> Baby Advice Cards</label>
+    </div>
+
+    <div class="customization">
+        <h3>Special Requests:</h3>
+        <textarea id="special-requests" name="special-requests" rows="4" placeholder="Include any special requests or additional information"></textarea>
+    </div>
+
+    <div class="customization">
+        <h3>Gift Registry:</h3>
+        <textarea id="gift-registry" name="gift-registry" rows="4" placeholder="Include any details regarding gifts or a gift registry"></textarea>
+    </div>
+
+    <div class="customization">
+        <h3>Personal Message for Invitations:</h3>
+        <textarea id="personal-message" name="personal-message" rows="4" placeholder="Write a personalized note for your guests"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Planning Details</button>
+</form>
+
+<footer>
+    <p>&copy; 2025 baby shower event planning services</p>
+    <div class="social-icons">
+        <a href="#" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 24px; height: 24px;"></a>
+        <a href="https://x.com/i/flow/login" title="Twitter"> <img src="twitter.jpg" alt="Twitter" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.instagram.com/celeb_raevents?igsh=cnE5eDdhNHZobjh0" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 24px; height: 24px;"></a>
+        <a href="https://www.linkedin.com/login" title="LinkedIn"> <img src="linkedin.jpg" alt="LinkedIn" style="width: 24px; height: 24px;"></a>
+    </div>
+</footer>
+<script type="module" src="babyshower.js"></script>
+</body>
+</html>
