@@ -23,7 +23,7 @@ loginForm.addEventListener('submit', async (e) => {
 
         // ✅ Redirect or notify on successful login
         alert('✅ Login successful!');
-        window.location.href = 'dashboard.html'; // Change to your target page
+        window.location.href = 'index.html'; // Change to your target page
     } catch (error) {
         // ✅ Handle login errors
         console.error('Login failed:', error);
